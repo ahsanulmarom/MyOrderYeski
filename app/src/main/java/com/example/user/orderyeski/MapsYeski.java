@@ -12,6 +12,14 @@ import com.google.android.gms.maps.model.MarkerOptions;
 
 public class MapsYeski extends FragmentActivity implements OnMapReadyCallback {
 
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.mapslayout);
+        SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
+                .findFragmentById(R.id.map);
+        mapFragment.getMapAsync(this);
+    }
     //Isi Maps
     
 }

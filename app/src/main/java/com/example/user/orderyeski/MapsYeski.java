@@ -20,6 +20,15 @@ public class MapsYeski extends FragmentActivity implements OnMapReadyCallback {
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
     }
-    //Isi Maps
+    
+    @Override
+    public void onMapReady(GoogleMap googleMap) {
+        mMap = googleMap;
+        Location location = null;
+
+        LatLng yeski = new LatLng(-7.274565, 112.7573892);
+        mMap.addMarker(new MarkerOptions().position(yeski).title("Lokasi Yeski Cafe"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(yeski));
+    }
     
 }

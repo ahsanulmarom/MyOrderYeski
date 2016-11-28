@@ -25,3 +25,86 @@
         android:id="@+id/textViewpetunjuk"
         android:textSize="15dp"
         android:textColor="#FFFFFF" />
+     <EditText
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:inputType="textPersonName"
+        android:background="#FFFFFF"
+        android:hint="Nama Lengkap Pemesan"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="5dp"
+        android:ems="0"
+        android:id="@+id/formnama"
+        android:layout_below="@+id/textViewpetunjuk"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:inputType="number"
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:background="#FFFFFF"
+        android:hint="No HP"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="5dp"
+        android:ems="0"
+        android:id="@+id/formnotelp"
+        android:layout_below="@+id/formnama"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:inputType="textMultiLine"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:background="#FFFFFF"
+        android:hint="Alamat Pengiriman"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="5dp"
+        android:ems="10"
+        android:id="@+id/formalamat"
+        android:layout_below="@+id/formnotelp"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="Alamat :"
+        android:textSize="35px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView6"
+        android:layout_alignBaseline="@+id/formalamat"
+        android:layout_alignBottom="@+id/formalamat"
+        android:layout_alignStart="@+id/textView5"
+        android:textColor="#FFFFFF"/>
+
+    <TextView
+        android:text="Nama :"
+        android:textSize="35px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:id="@+id/textView4"
+        android:textColor="#FFFFFF"
+        android:layout_alignBaseline="@+id/formnama"
+        android:layout_alignBottom="@+id/formnama"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="No HP :"
+        android:textSize="35px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView5"
+        android:textColor="#FFFFFF"
+        android:layout_alignBaseline="@+id/formnotelp"
+        android:layout_alignBottom="@+id/formnotelp"
+        android:layout_alignStart="@+id/textView4" />
+
+    <ImageButton
+        android:src="@drawable/iconpilihmenu"
+        android:background="@null"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:id="@+id/buttonform"
+        android:layout_below="@+id/formalamat"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp" />
+</RelativeLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/about"
+        android:id="@+id/judul" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/judul1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:textSize="26dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="225dp"
+        android:text="FAQ"/>
+
+    <ScrollView
+        android:layout_width="350dp"
+        android:layout_height="135dp"
+        android:layout_below="@+id/judul1"
+        android:layout_alignParentStart="true"
+        android:scrollbarStyle="insideOverlay">
+
+        <TextView
+            android:layout_width="345dp"
+            android:layout_height="135dp"
+            android:layout_below="@+id/judul1"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_alignParentStart="true"
+            android:id="@+id/badan1"
+            android:text="Belum Diisi"/>
+    </ScrollView>
+
+    <TextView
+        android:text="
+Jalan Gubeng Kertajaya 9 No. 49 Airlangga,
+Gubeng, Surabaya, Jawa Timur 60111
+
+Open: 08.00 - 20.00 WIB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="55dp"
+        android:textAlignment="center"
+        android:id="@+id/bawah" />
+</RelativeLayout>
+
+    <!--
+        * Designed by Alfian F
+    -->

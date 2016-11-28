@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/sampulpolos">
+
+    <TextView
+        android:text="Formulir Pemesanan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+        android:id="@+id/textView"
+        android:textSize="30dp"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:text="Silakan isi, sebelum melakukan pemesanan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/textView"
+        android:id="@+id/textViewpetunjuk"
+        android:textSize="15dp"
+        android:textColor="#FFFFFF" />

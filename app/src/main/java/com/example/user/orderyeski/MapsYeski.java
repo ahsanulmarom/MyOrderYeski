@@ -1,4 +1,4 @@
-package com.example.user.orderyeski;
+package com.example.user.myorderyeski;
 
 import android.location.Location;
 import android.support.v4.app.FragmentActivity;

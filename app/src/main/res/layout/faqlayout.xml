@@ -52,7 +52,3 @@ Open: 08.00 - 20.00 WIB"
         android:textAlignment="center"
         android:id="@+id/bawah" />
 </RelativeLayout>
-
-    <!--
-        * Designed by Alfian F
-    -->

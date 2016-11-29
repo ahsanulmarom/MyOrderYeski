@@ -52,7 +52,3 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="20dp" />
 </RelativeLayout>
-
-<!--
-    * Designed by Alfian F
--->

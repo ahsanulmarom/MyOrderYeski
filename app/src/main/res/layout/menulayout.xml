@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/sampulpolosteks"/>
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icondaftarmenu"
+        android:id="@+id/menu"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentTop="true"
+        android:background="@null"/>
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/order"
+        android:src="@drawable/iconorder"
+        android:layout_below="@+id/menu"
+        android:layout_alignStart="@+id/menu"
+        android:background="@null"/>
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/iconpromo"
+        android:id="@+id/promo"
+        android:layout_below="@+id/order"
+        android:layout_alignStart="@+id/order"
+        android:background="@null"/>
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/about"
+        android:src="@drawable/iconabout"
+        android:layout_below="@+id/promo"
+        android:background="@null"/>
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/faq"
+        android:src="@drawable/iconfaq"
+        android:layout_below="@+id/about"
+        android:layout_alignStart="@+id/about"
+        android:background="@null"/>
+
+</RelativeLayout>

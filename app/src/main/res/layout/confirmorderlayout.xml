@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sampulpolos">
+
+    <TextView
+        android:text="Konfirmasi Pesanan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:layout_margin="10dp"
+        android:id="@+id/textView7"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:text=""
+        android:textSize="14dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView7"
+        android:layout_margin="10dp"
+        android:id="@+id/tvkonfirmasi"
+        android:textColor="#FFFFFF"/>
+
+    <ImageButton
+        android:src="@drawable/iconso"
+        android:background="@null"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:id="@+id/buttonkonfirmasi"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true" />
+    <TextView
+        android:text="NB: Pastikan Paket Data Internet aktif dan pulsa anda mencukupi"
+        android:textSize="12dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonkonfirmasi"
+        android:layout_margin="1dp"
+        android:textColor="#FFFFFFFF"
+        android:id="@+id/textView8" />
+</RelativeLayout>
+
+    <!--
+        * Designed by Alfian F
+    -->

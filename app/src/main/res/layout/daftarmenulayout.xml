@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/sampulpolos">
+
+    <EditText
+        android:layout_marginTop="3dp"
+        android:id="@+id/et"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/buttonsearch"
+        android:layout_toLeftOf="@+id/buttonsearchtn"
+        android:hint="Cari di Sini"
+        android:background="#FFFFFF" >
+    </EditText>
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_marginTop="3dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:onClick="search_db"
+        android:text="Cari"
+        android:textColor="#FFFFFF"
+        android:background="#C0C0C0" />
+
+    <ListView
+        android:id="@+id/lv"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn" >
+    </ListView>
+</RelativeLayout>
+
+    <!--
+        * Designed by Alfian F
+    -->

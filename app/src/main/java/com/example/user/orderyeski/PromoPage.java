@@ -15,6 +15,39 @@ import android.widget.SimpleCursorAdapter;
 import android.widget.Toast;
 import android.widget.AdapterView.OnItemClickListener;
 
+public class PromoPage extends Activity {
+    protected ListView lv;
+    protected ListAdapter adapter;
+    SQLiteDatabase db;
+    Cursor cursor;
+    EditText et_db;
+
+    public PromoPage() {
+    }
+
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        this.setContentView(R.layout.daftarmenulayout);
+        this.db = (new DB_Promo(this)).getWritableDatabase();
+        this.lv = (ListView)this.findViewById(R.id.lv);
+        this.et_db = (EditText)this.findViewById(R.id.et);
+
+        try {
+            this.cursor = this.db.rawQuery("SELECT * FROM Promo ORDER BY nama ASC", (String[])null);
+            this.adapter = new SimpleCursorAdapter(this, R.layout.promolayout, this.cursor, new String[]{"nama", "periode", "img"}, new int[]{R.id.tv_nama, R.id.tvPeriode, R.id.imV});
+            this.lv.setAdapter(this.adapter);
+            this.lv.setTextFilterEnabled(true);
+            this.lv.setOnItemClickListener(new OnItemClickListener() {
+                public void onItemClick(AdapterView<?> parent, View v, int position, long id) {
+                    PromoPage.this.detail(position);
+                }
+            });
+        } catch (Exception var3) {
+            var3.printStackTrace();
+        }
+
+    }
+
     public void search_db(View v) {
         String edit_db = this.et_db.getText().toString();
         if(!edit_db.equals("")) {

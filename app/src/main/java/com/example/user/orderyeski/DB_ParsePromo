@@ -1,0 +1,52 @@
+package com.example.user.orderyeski;
+
+import android.app.Activity;
+import android.content.Intent;
+import android.os.Bundle;
+import android.widget.Gallery;
+import android.widget.ImageSwitcher;
+import android.widget.ImageView;
+import android.widget.TextView;
+
+public class DB_ParsePromo extends Activity {
+    ImageView Im;
+    TextView tv_nama;
+    TextView tv_bentuk;
+    TextView tv_syarat;
+    TextView tv_periode;
+    TextView tv_de;
+    TextView id;
+    Gallery gallery;
+    ImageSwitcher imageSwitcher;
+    Integer[] imageIDs = new Integer[4];
+    int msg_im;
+
+    public DB_ParsePromo() {
+    }
+
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        this.setContentView(R.layout.detilpromo);
+        Intent iIdentifikasi = this.getIntent();
+        this.msg_im = iIdentifikasi.getIntExtra("dataIM", 0);
+        String msg_nama = iIdentifikasi.getStringExtra("dataNama");
+        String msg_bentuk = iIdentifikasi.getStringExtra("dataBentuk");
+        String msg_syarat = iIdentifikasi.getStringExtra("dataSyarat");
+        String msg_periode = iIdentifikasi.getStringExtra("dataPeriode");
+        String msg_de = iIdentifikasi.getStringExtra("dataDe");
+
+        this.Im = (ImageView)this.findViewById(R.id.iv_detail);
+        this.tv_nama = (TextView)this.findViewById(R.id.tvNama);
+        this.tv_bentuk = (TextView)this.findViewById(R.id.tvBentuk);
+        this.tv_syarat = (TextView)this.findViewById(R.id.tvSyarat);
+        this.tv_periode = (TextView)this.findViewById(R.id.tvPeriode);
+        this.tv_de = (TextView) this.findViewById(R.id.tvDe);
+
+        this.Im.setImageResource(this.msg_im);
+        this.tv_nama.setText(msg_nama);
+        this.tv_bentuk.setText(msg_bentuk);
+        this.tv_syarat.setText(msg_syarat);
+        this.tv_periode.setText(msg_periode);
+        this.tv_de.setText(msg_de);
+    }
+}

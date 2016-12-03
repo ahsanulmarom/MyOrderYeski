@@ -13,6 +13,51 @@ public class DB_Promo extends SQLiteOpenHelper {
         super(context, "db_promo", (CursorFactory)null, 1000);
     }
     
-    //Belum Selesai
+    public void onCreate(SQLiteDatabase db) {
+        String sql = "CREATE TABLE IF NOT EXISTS Promo(_id INTEGER PRIMARY KEY AUTOINCREMENT, nama TEXT, bentuk TEXT, syarat TEXT, periode TEXT, de TEXT, img BLOB)";
+        db.execSQL(sql);
+        ContentValues values = new ContentValues();
+
+        values.put("_id", "1");
+        values.put("nama", "Buy 3 Get 1 Free (1)");
+        values.put("bentuk", "Setiap Pembelian MIE RAMEN 3 PORSI, Gratis TAHU CRISPY");
+        values.put("syarat", "Pembelian MIE RAMEN 3 PORSI");
+        values.put("periode", "Tanpa Batas Akhir");
+        values.put("de", "B3G1F1");
+        values.put("img", R.drawable.iconyeski);
+        db.insert("Promo", "_id", values);
+
+        values.put("_id", "2");
+        values.put("nama", "Buy 3 Get 1 Free (2)");
+        values.put("bentuk", "Setiap Pembelian MINUMAN 3 PORSI, Gratis ES TEH");
+        values.put("syarat", "Pembelian MINUMAN 3 PORSI");
+        values.put("periode", "Tanpa Batas Akhir");
+        values.put("de", "B3G1F2");
+        values.put("img", R.drawable.iconyeski);
+        db.insert("Promo", "_id", values);
+
+        values.put("_id", "3");
+        values.put("nama", "Buy 3 Get 1 Free (3)");
+        values.put("bentuk", "Setiap Pembelian CHICKEN PAPER 3 PORSI, Gratis TEMPE MENDOAN");
+        values.put("syarat", "Pembelian CHICKEN PAPER 3 PORSI");
+        values.put("periode", "Tanpa Batas Akhir");
+        values.put("de", "B3G1F3");
+        values.put("img", R.drawable.iconyeski);
+        db.insert("Promo", "_id", values);
+
+        values.put("_id", "4");
+        values.put("nama", "Diskon 5%");
+        values.put("bentuk", "Beli 5 PORSI, DISKON 5%");
+        values.put("syarat", "Beli 5 PORSI");
+        values.put("periode", "Tanpa Batas Akhir");
+        values.put("de", "D5");
+        values.put("img", R.drawable.iconyeski);
+        db.insert("Promo", "_id", values);
+    }
+
+    public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
+        db.execSQL("DROP TABLE IF EXISTS Promo");
+        this.onCreate(db);
+    }
     
 }

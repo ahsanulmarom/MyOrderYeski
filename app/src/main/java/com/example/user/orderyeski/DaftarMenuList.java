@@ -73,6 +73,27 @@ public class DaftarMenuList extends Activity {
         }
     }
     
-    //belum selesai
+    public void detail(int position) {
+        int im = 0;
+        String _id = "";
+        String nama = "";
+        String jenis = "";
+        String harga = "";
+        if(this.cursor.moveToFirst()) {
+            this.cursor.moveToPosition(position);
+            im = this.cursor.getInt(this.cursor.getColumnIndex("img"));
+            nama = this.cursor.getString(this.cursor.getColumnIndex("nama"));
+            jenis = this.cursor.getString(this.cursor.getColumnIndex("jenis"));
+            harga = this.cursor.getString(this.cursor.getColumnIndex("harga"));
+        }
+
+        Intent iIntent = new Intent(this, DB_ParseMenu.class);
+        iIntent.putExtra("dataIM", im);
+        iIntent.putExtra("dataNama", nama);
+        iIntent.putExtra("dataJenis", jenis);
+        iIntent.putExtra("dataHarga", harga);
+        this.setResult(-1, iIntent);
+        this.startActivityForResult(iIntent, 99);
+    }
     
  }

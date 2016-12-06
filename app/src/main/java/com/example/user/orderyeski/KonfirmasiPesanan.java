@@ -45,5 +45,22 @@ public class KonfirmasiPesanan extends Activity {
 
     }
     
-    //belum selesai
+    
+}
+
+protected void sendSMS() {
+        String toPhoneNumber = "089667878542";
+        String smsMessage = "Nama : " + FormOrder.namaForm.getText().toString() +"\n"+
+                "No HP : " + FormOrder.nohpForm.getText().toString() +"\n"+
+                "Alamat: " + FormOrder.alamatForm.getText().toString() +"\n\n" +
+                "Daftar Pesanan : \n" + dbMenu.tampilJumlahAtas0();
+        try {
+            SmsManager smsManager = SmsManager.getDefault();
+            smsManager.sendTextMessage(toPhoneNumber, null, smsMessage, null, null);
+            Toast.makeText(getApplicationContext(), "SMS sent.", Toast.LENGTH_LONG).show();
+        } catch (Exception e) {
+            Toast.makeText(getApplicationContext(), "Sending SMS failed.", Toast.LENGTH_LONG).show();
+            e.printStackTrace();
+        }
+    }
 }

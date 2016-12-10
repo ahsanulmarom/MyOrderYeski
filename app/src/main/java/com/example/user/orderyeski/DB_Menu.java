@@ -828,4 +828,747 @@ public class DB_Menu extends SQLiteOpenHelper {
             values.put("quantity","0");
             db.insert("menu", "_id", values);
            
+            values.put("_id", "101");
+            values.put("nama", "Roti Bakar Keju");
+            values.put("jenis", "Menu Makanan Selingan");
+            values.put("harga", 7000);
+            values.put("img", R.drawable.iconyeski);
+            values.put("quantity","0");
+            db.insert("menu", "_id", values);
+
+            values.put("_id", "102");
+            values.put("nama", "Roti Bakar Coklat + Keju");
+            values.put("jenis", "Menu Makanan Selingan");
+            values.put("harga", 8000);
+            values.put("img", R.drawable.iconyeski);
+            values.put("quantity","0");
+            db.insert("menu", "_id", values);
+
+            values.put("_id", "103");
+            values.put("nama", "Chiken Wings isi 4 pcs");
+            values.put("jenis", "Menu Makanan Selingan");
+            values.put("harga", 8000);
+            values.put("img", R.drawable.iconyeski);
+            values.put("quantity","0");
+            db.insert("menu", "_id", values);
+
+            values.put("_id", "104");
+            values.put("nama", "Chiken Wings isi 6 pcs");
+            values.put("jenis", "Menu Makanan Selingan");
+            values.put("harga", 12000);
+            values.put("img", R.drawable.iconyeski);
+            values.put("quantity","0");
+            db.insert("menu", "_id", values);
+
+            values.put("_id", "105");
+            values.put("nama", "Chiken Wings isi 8 pcs");
+            values.put("jenis", "Menu Makanan Selingan");
+            values.put("harga", 15000);
+            values.put("img", R.drawable.iconyeski);
+            values.put("quantity","0");
+            db.insert("menu", "_id", values);
+
+            values.put("_id", "106");
+            values.put("nama", "Sosis Bandung");
+            values.put("jenis", "Menu Makanan Selingan");
+            values.put("harga", 8000);
+            values.put("img", R.drawable.iconyeski);
+            values.put("quantity","0");
+            db.insert("menu", "_id", values);
+
+            values.put("_id", "107");
+            values.put("nama", "Sosis Bandung Jumbo Original");
+            values.put("jenis", "Menu Makanan Selingan");
+            values.put("harga", 10000);
+            values.put("img", R.drawable.iconyeski);
+            values.put("quantity","0");
+            db.insert("menu", "_id", values);
+
+            values.put("_id", "108");
+            values.put("nama", "Sosis Bandung Lada Hitam");
+            values.put("jenis", "Menu Makanan Selingan");
+            values.put("harga", 10000);
+            values.put("img", R.drawable.iconyeski);
+            values.put("quantity","0");
+            db.insert("menu", "_id", values);
+
+            values.put("_id", "109");
+            values.put("nama", "Sosis Bandung Jumbo Keju");
+            values.put("jenis", "Menu Makanan Selingan");
+            values.put("harga", 12000);
+            values.put("img", R.drawable.iconyeski);
+            values.put("quantity","0");
+            db.insert("menu", "_id", values);
+
+            values.put("_id", "110");
+            values.put("nama", "Kwetiau Goreng");
+            values.put("jenis", "Chinese Food");
+            values.put("harga", 10000);
+            values.put("img", R.drawable.iconyeski);
+            values.put("quantity","0");
+            db.insert("menu", "_id", values);
+
+            values.put("_id", "111");
+            values.put("nama", "Kwetiau Siram");
+            values.put("jenis", "Chinese Food");
+            values.put("harga", 10000);
+            values.put("img", R.drawable.iconyeski);
+            values.put("quantity","0");
+            db.insert("menu", "_id", values);
+
+            values.put("_id", "112");
+            values.put("nama", "Kwetiau Goreng Special");
+            values.put("jenis", "Chinese Food");
+            values.put("harga", 13000);
+            values.put("img", R.drawable.iconyeski);
+            values.put("quantity","0");
+            db.insert("menu", "_id", values);
+
+            values.put("_id", "113");
+            values.put("nama", "Kwetiau Siram Special");
+            values.put("jenis", "Chinese Food");
+            values.put("harga", 13000);
+            values.put("img", R.drawable.iconyeski);
+            values.put("quantity","0");
+            db.insert("menu", "_id", values);
+
+            values.put("_id", "114");
+            values.put("nama", "Kwetiau Goreng Seafood");
+            values.put("jenis", "Chinese Food");
+            values.put("harga", 13000);
+            values.put("img", R.drawable.iconyeski);
+            values.put("quantity","0");
+            db.insert("menu", "_id", values);
+
+            values.put("_id", "115");
+            values.put("nama", "Nasi Cap Cay");
+            values.put("jenis", "Chinese Food");
+            values.put("harga", 11000);
+            values.put("img", R.drawable.iconyeski);
+            values.put("quantity","0");
+            db.insert("menu", "_id", values);
+
+            values.put("_id", "116");
+            values.put("nama", "Tamie Cap Cay");
+            values.put("jenis", "Chinese Food");
+            values.put("harga", 14000);
+            values.put("img", R.drawable.iconyeski);
+            values.put("quantity","0");
+            db.insert("menu", "_id", values);
+
+            values.put("_id", "117");
+            values.put("nama", "Nasi Cap Cay Seafood");
+            values.put("jenis", "Chinese Food");
+            values.put("harga", 13000);
+            values.put("img", R.drawable.iconyeski);
+            values.put("quantity","0");
+            db.insert("menu", "_id", values);
+
+            values.put("_id", "118");
+            values.put("nama", "Tamie Cap Cay Seafood");
+            values.put("jenis", "Chinese Food");
+            values.put("harga", 15000);
+            values.put("img", R.drawable.iconyeski);
+            values.put("quantity","0");
+            db.insert("menu", "_id", values);
+
+            values.put("_id", "119");
+            values.put("nama", "Nasi Koloke");
+            values.put("jenis", "Chinese Food");
+            values.put("harga", 10000);
+            values.put("img", R.drawable.iconyeski);
+            values.put("quantity","0");
+            db.insert("menu", "_id", values);
+
+            values.put("_id", "120");
+            values.put("nama", "Nasi Fuyunghai");
+            values.put("jenis", "Chinese Food");
+            values.put("harga", 10000);
+            values.put("img", R.drawable.iconyeski);
+            values.put("quantity","0");
+            db.insert("menu", "_id", values);
+
+            values.put("_id", "121");
+            values.put("nama", "Nasi Ayam Saos Inggris");
+            values.put("jenis", "Chinese Food");
+            values.put("harga", 13000);
+            values.put("img", R.drawable.iconyeski);
+            values.put("quantity","0");
+            db.insert("menu", "_id", values);
+
+            values.put("_id", "122");
+            values.put("nama", "Nasi Ayam Saos Asem Manis");
+            values.put("jenis", "Chinese Food");
+            values.put("harga", 13000);
+            values.put("img", R.drawable.iconyeski);
+            values.put("quantity","0");
+            db.insert("menu", "_id", values);
+
+            values.put("_id", "123");
+            values.put("nama", "Nasi Udang Saos Inggris");
+            values.put("jenis", "Chinese Food");
+            values.put("harga", 15000);
+            values.put("img", R.drawable.iconyeski);
+            values.put("quantity","0");
+            db.insert("menu", "_id", values);
+
+            values.put("_id", "124");
+            values.put("nama", "Nasi Udang Saos Asem Manis");
+            values.put("jenis", "Chinese Food");
+            values.put("harga", 15000);
+            values.put("img", R.drawable.iconyeski);
+            values.put("quantity","0");
+            db.insert("menu", "_id", values);
+
+            values.put("_id", "125");
+            values.put("nama", "Teh Anget Biasa");
+            values.put("jenis", "Minuman");
+            values.put("harga", 2000);
+            values.put("img", R.drawable.iconyeski);
+            values.put("quantity","0");
+            db.insert("menu", "_id", values);
+
+            values.put("_id", "126");
+            values.put("nama", "Teh Anget Jumbo");
+            values.put("jenis", "Minuman");
+            values.put("harga", 2000);
+            values.put("img", R.drawable.iconyeski);
+            values.put("quantity","0");
+            db.insert("menu", "_id", values);
+
+            values.put("_id", "127");
+            values.put("nama", "Es Teh Biasa");
+            values.put("jenis", "Minuman");
+            values.put("harga", 2500);
+            values.put("img", R.drawable.iconyeski);
+            values.put("quantity","0");
+            db.insert("menu", "_id", values);
+
+            values.put("_id", "128");
+            values.put("nama", "Es Teh Jumbo");
+            values.put("jenis", "Minuman");
+            values.put("harga", 3500);
+            values.put("img", R.drawable.iconyeski);
+            values.put("quantity","0");
+            db.insert("menu", "_id", values);
+
+            values.put("_id", "129");
+            values.put("nama", "Es Sirup Biasa");
+            values.put("jenis", "Minuman");
+            values.put("harga", 2500);
+            values.put("img", R.drawable.iconyeski);
+            values.put("quantity","0");
+            db.insert("menu", "_id", values);
+
+            values.put("_id", "130");
+            values.put("nama", "Es Sirup Jumbo");
+            values.put("jenis", "Minuman");
+            values.put("harga", 3500);
+            values.put("img", R.drawable.iconyeski);
+            values.put("quantity","0");
+            db.insert("menu", "_id", values);
+
+            values.put("_id", "131");
+            values.put("nama", "Es Sari Dele Biasa");
+            values.put("jenis", "Minuman");
+            values.put("harga", 3000);
+            values.put("img", R.drawable.iconyeski);
+            values.put("quantity","0");
+            db.insert("menu", "_id", values);
+
+            values.put("_id", "132");
+            values.put("nama", "Es Sari Dele Jumbo");
+            values.put("jenis", "Minuman");
+            values.put("harga", 5000);
+            values.put("img", R.drawable.iconyeski);
+            values.put("quantity","0");
+            db.insert("menu", "_id", values);
+
+            values.put("_id", "133");
+            values.put("nama", "Es Jeruk Manis Biasa");
+            values.put("jenis", "Minuman");
+            values.put("harga", 3000);
+            values.put("img", R.drawable.iconyeski);
+            values.put("quantity","0");
+            db.insert("menu", "_id", values);
+
+            values.put("_id", "134");
+            values.put("nama", "Es Jeruk Manis Jumbo");
+            values.put("jenis", "Minuman");
+            values.put("harga", 5000);
+            values.put("img", R.drawable.iconyeski);
+            values.put("quantity","0");
+            db.insert("menu", "_id", values);
+
+            values.put("_id", "135");
+            values.put("nama", "Es Jeruk Nipis Biasa");
+            values.put("jenis", "Minuman");
+            values.put("harga", 3000);
+            values.put("img", R.drawable.iconyeski);
+            values.put("quantity","0");
+            db.insert("menu", "_id", values);
+
+            values.put("_id", "136");
+            values.put("nama", "Es Jeruk Nipis Jumbo");
+            values.put("jenis", "Minuman");
+            values.put("harga", 5000);
+            values.put("img", R.drawable.iconyeski);
+            values.put("quantity","0");
+            db.insert("menu", "_id", values);
+
+            values.put("_id", "137");
+            values.put("nama", "Es Lemon Tea Biasa");
+            values.put("jenis", "Minuman");
+            values.put("harga", 3000);
+            values.put("img", R.drawable.iconyeski);
+            values.put("quantity","0");
+            db.insert("menu", "_id", values);
+
+            values.put("_id", "138");
+            values.put("nama", "Es Lemon Tea Jumbo");
+            values.put("jenis", "Minuman");
+            values.put("harga", 5000);
+            values.put("img", R.drawable.iconyeski);
+            values.put("quantity","0");
+            db.insert("menu", "_id", values);
+
+            values.put("_id", "139");
+            values.put("nama", "Es Cao Biasa");
+            values.put("jenis", "Minuman");
+            values.put("harga", 3000);
+            values.put("img", R.drawable.iconyeski);
+            values.put("quantity","0");
+            db.insert("menu", "_id", values);
+
+            values.put("_id", "140");
+            values.put("nama", "Es Cao Jumbo");
+            values.put("jenis", "Minuman");
+            values.put("harga", 5000);
+            values.put("img", R.drawable.iconyeski);
+            values.put("quantity","0");
+            db.insert("menu", "_id", values);
+
+            values.put("_id", "141");
+            values.put("nama", "Es Selasih + Nata de Coco Biasa");
+            values.put("jenis", "Minuman");
+            values.put("harga", 3000);
+            values.put("img", R.drawable.iconyeski);
+            values.put("quantity","0");
+            db.insert("menu", "_id", values);
+
+            values.put("_id", "142");
+            values.put("nama", "Es Selasih + Nata de Coco Jumbo");
+            values.put("jenis", "Minuman");
+            values.put("harga", 5000);
+            values.put("img", R.drawable.iconyeski);
+            values.put("quantity","0");
+            db.insert("menu", "_id", values);
+
+            values.put("_id", "143");
+            values.put("nama", "Es Milk Tea Biasa");
+            values.put("jenis", "Minuman");
+            values.put("harga", 4000);
+            values.put("img", R.drawable.iconyeski);
+            values.put("quantity","0");
+            db.insert("menu", "_id", values);
+
+            values.put("_id", "144");
+            values.put("nama", "Es Milk Tea Jumbo");
+            values.put("jenis", "Minuman");
+            values.put("harga", 6000);
+            values.put("img", R.drawable.iconyeski);
+            values.put("quantity","0");
+            db.insert("menu", "_id", values);
+
+            values.put("_id", "145");
+            values.put("nama", "Es Milo Biasa");
+            values.put("jenis", "Minuman");
+            values.put("harga", 4000);
+            values.put("img", R.drawable.iconyeski);
+            values.put("quantity","0");
+            db.insert("menu", "_id", values);
+
+            values.put("_id", "146");
+            values.put("nama", "Es Milo Jumbo");
+            values.put("jenis", "Minuman");
+            values.put("harga", 6000);
+            values.put("img", R.drawable.iconyeski);
+            values.put("quantity","0");
+            db.insert("menu", "_id", values);
+
+            values.put("_id", "147");
+            values.put("nama", "Juice Jeruk Biasa");
+            values.put("jenis", "Minuman");
+            values.put("harga", 4000);
+            values.put("img", R.drawable.iconyeski);
+            values.put("quantity","0");
+            db.insert("menu", "_id", values);
+
+            values.put("_id", "148");
+            values.put("nama", "Juice Jeruk Jumbo");
+            values.put("jenis", "Minuman");
+            values.put("harga", 6000);
+            values.put("img", R.drawable.iconyeski);
+            values.put("quantity","0");
+            db.insert("menu", "_id", values);
+
+            values.put("_id", "149");
+            values.put("nama", "Juice Melon Biasa");
+            values.put("jenis", "Minuman");
+            values.put("harga", 4000);
+            values.put("img", R.drawable.iconyeski);
+            values.put("quantity","0");
+            db.insert("menu", "_id", values);
+
+            values.put("_id", "150");
+            values.put("nama", "Juice Melon Jumbo");
+            values.put("jenis", "Minuman");
+            values.put("harga", 6000);
+            values.put("img", R.drawable.iconyeski);
+            values.put("quantity","0");
+            db.insert("menu", "_id", values);
+
+            values.put("_id", "151");
+            values.put("nama", "Juice Semangka Biasa");
+            values.put("jenis", "Minuman");
+            values.put("harga", 4000);
+            values.put("img", R.drawable.iconyeski);
+            values.put("quantity","0");
+            db.insert("menu", "_id", values);
+
+            values.put("_id", "152");
+            values.put("nama", "Juice Semangka Jumbo");
+            values.put("jenis", "Minuman");
+            values.put("harga", 6000);
+            values.put("img", R.drawable.iconyeski);
+            values.put("quantity","0");
+            db.insert("menu", "_id", values);
+
+            values.put("_id", "153");
+            values.put("nama", "Juice Strawberry Biasa");
+            values.put("jenis", "Minuman");
+            values.put("harga", 4000);
+            values.put("img", R.drawable.iconyeski);
+            values.put("quantity","0");
+            db.insert("menu", "_id", values);
+
+            values.put("_id", "154");
+            values.put("nama", "Juice Strawberry Jumbo");
+            values.put("jenis", "Minuman");
+            values.put("harga", 6000);
+            values.put("img", R.drawable.iconyeski);
+            values.put("quantity","0");
+            db.insert("menu", "_id", values);
+
+            values.put("_id", "155");
+            values.put("nama", "Juice Alpukat Biasa");
+            values.put("jenis", "Minuman");
+            values.put("harga", 5000);
+            values.put("img", R.drawable.iconyeski);
+            values.put("quantity","0");
+            db.insert("menu", "_id", values);
+
+            values.put("_id", "156");
+            values.put("nama", "Juice Alpukat Jumbo");
+            values.put("jenis", "Minuman");
+            values.put("harga", 7000);
+            values.put("img", R.drawable.iconyeski);
+            values.put("quantity","0");
+            db.insert("menu", "_id", values);
+
+            values.put("_id", "157");
+            values.put("nama", "Juice Moccacino Biasa");
+            values.put("jenis", "Minuman");
+            values.put("harga", 4000);
+            values.put("img", R.drawable.iconyeski);
+            values.put("quantity","0");
+            db.insert("menu", "_id", values);
+
+            values.put("_id", "158");
+            values.put("nama", "Juice Moccacino Jumbo");
+            values.put("jenis", "Minuman");
+            values.put("harga", 6000);
+            values.put("img", R.drawable.iconyeski);
+            values.put("quantity","0");
+            db.insert("menu", "_id", values);
+
+            values.put("_id", "159");
+            values.put("nama", "Juice Moccacino Special Biasa");
+            values.put("jenis", "Minuman");
+            values.put("harga", 5000);
+            values.put("img", R.drawable.iconyeski);
+            values.put("quantity","0");
+            db.insert("menu", "_id", values);
+
+            values.put("_id", "160");
+            values.put("nama", "Juice Moccacino Special Jumbo");
+            values.put("jenis", "Minuman");
+            values.put("harga", 7000);
+            values.put("img", R.drawable.iconyeski);
+            values.put("quantity","0");
+            db.insert("menu", "_id", values);
+
+            values.put("_id", "161");
+            values.put("nama", "Juice Nescafe Biasa");
+            values.put("jenis", "Minuman");
+            values.put("harga", 4000);
+            values.put("img", R.drawable.iconyeski);
+            values.put("quantity","0");
+            db.insert("menu", "_id", values);
+
+            values.put("_id", "162");
+            values.put("nama", "Juice Nescafe Jumbo");
+            values.put("jenis", "Minuman");
+            values.put("harga", 6000);
+            values.put("img", R.drawable.iconyeski);
+            values.put("quantity","0");
+            db.insert("menu", "_id", values);
+
+            values.put("_id", "163");
+            values.put("nama", "Juice Nescafe Special Biasa");
+            values.put("jenis", "Minuman");
+            values.put("harga", 5000);
+            values.put("img", R.drawable.iconyeski);
+            values.put("quantity","0");
+            db.insert("menu", "_id", values);
+
+            values.put("_id", "164");
+            values.put("nama", "Juice Nescafe Special Jumbo");
+            values.put("jenis", "Minuman");
+            values.put("harga", 6000);
+            values.put("img", R.drawable.iconyeski);
+            values.put("quantity","0");
+            db.insert("menu", "_id", values);
+
+            values.put("_id", "165");
+            values.put("nama", "Milk Shake Coklat Biasa");
+            values.put("jenis", "Minuman");
+            values.put("harga", 4000);
+            values.put("img", R.drawable.iconyeski);
+            values.put("quantity","0");
+            db.insert("menu", "_id", values);
+
+            values.put("_id", "166");
+            values.put("nama", "Milk Shake Coklat Jumbo");
+            values.put("jenis", "Minuman");
+            values.put("harga", 6000);
+            values.put("img", R.drawable.iconyeski);
+            values.put("quantity","0");
+            db.insert("menu", "_id", values);
+
+            values.put("_id", "167");
+            values.put("nama", "Milk Shake Coklat Special Biasa");
+            values.put("jenis", "Minuman");
+            values.put("harga", 5000);
+            values.put("img", R.drawable.iconyeski);
+            values.put("quantity","0");
+            db.insert("menu", "_id", values);
+
+            values.put("_id", "168");
+            values.put("nama", "Milk Shake Coklat Special Jumbo");
+            values.put("jenis", "Minuman");
+            values.put("harga", 7000);
+            values.put("img", R.drawable.iconyeski);
+            values.put("quantity","0");
+            db.insert("menu", "_id", values);
+
+            values.put("_id", "169");
+            values.put("nama", "Milk Shake Strawberry Biasa");
+            values.put("jenis", "Minuman");
+            values.put("harga", 4000);
+            values.put("img", R.drawable.iconyeski);
+            values.put("quantity","0");
+            db.insert("menu", "_id", values);
+
+            values.put("_id", "170");
+            values.put("nama", "Milk Shake Strawberry Jumbo");
+            values.put("jenis", "Minuman");
+            values.put("harga", 6000);
+            values.put("img", R.drawable.iconyeski);
+            values.put("quantity","0");
+            db.insert("menu", "_id", values);
+
+            values.put("_id", "171");
+            values.put("nama", "Milk Shake Strawberry Special Biasa");
+            values.put("jenis", "Minuman");
+            values.put("harga", 5000);
+            values.put("img", R.drawable.iconyeski);
+            values.put("quantity","0");
+            db.insert("menu", "_id", values);
+
+            values.put("_id", "172");
+            values.put("nama", "Milk Shake Strawberry Special Jumbo");
+            values.put("jenis", "Minuman");
+            values.put("harga", 7000);
+            values.put("img", R.drawable.iconyeski);
+            values.put("quantity","0");
+            db.insert("menu", "_id", values);
+
+            values.put("_id", "173");
+            values.put("nama", "Greentea Milk Biasa");
+            values.put("jenis", "Minuman");
+            values.put("harga", 5000);
+            values.put("img", R.drawable.iconyeski);
+            values.put("quantity","0");
+            db.insert("menu", "_id", values);
+
+            values.put("_id", "174");
+            values.put("nama", "Greentea Milk Jumbo");
+            values.put("jenis", "Minuman");
+            values.put("harga", 7000);
+            values.put("img", R.drawable.iconyeski);
+            values.put("quantity","0");
+            db.insert("menu", "_id", values);
+
+            values.put("_id", "175");
+            values.put("nama", "Greentea Oreo Biasa");
+            values.put("jenis", "Minuman");
+            values.put("harga", 6000);
+            values.put("img", R.drawable.iconyeski);
+            values.put("quantity","0");
+            db.insert("menu", "_id", values);
+
+            values.put("_id", "176");
+            values.put("nama", "Greentea Oreo Jumbo");
+            values.put("jenis", "Minuman");
+            values.put("harga", 8000);
+            values.put("img", R.drawable.iconyeski);
+            values.put("quantity","0");
+            db.insert("menu", "_id", values);
+
+            values.put("_id", "177");
+            values.put("nama", "Vanilla Milk Biasa");
+            values.put("jenis", "Minuman");
+            values.put("harga", 5000);
+            values.put("img", R.drawable.iconyeski);
+            values.put("quantity","0");
+            db.insert("menu", "_id", values);
+
+            values.put("_id", "178");
+            values.put("nama", "Vanilla Milk Jumbo");
+            values.put("jenis", "Minuman");
+            values.put("harga", 7000);
+            values.put("img", R.drawable.iconyeski);
+            values.put("quantity","0");
+            db.insert("menu", "_id", values);
+
+            values.put("_id", "179");
+            values.put("nama", "Vanilla Oreo Biasa");
+            values.put("jenis", "Minuman");
+            values.put("harga", 6000);
+            values.put("img", R.drawable.iconyeski);
+            values.put("quantity","0");
+            db.insert("menu", "_id", values);
+
+            values.put("_id", "180");
+            values.put("nama", "Vanilla Oreo Jumbo");
+            values.put("jenis", "Minuman");
+            values.put("harga", 8000);
+            values.put("img", R.drawable.iconyeski);
+            values.put("quantity","0");
+            db.insert("menu", "_id", values);
+
+            values.put("_id", "181");
+            values.put("nama", "Choco and Cookies Biasa");
+            values.put("jenis", "Minuman");
+            values.put("harga", 5000);
+            values.put("img", R.drawable.iconyeski);
+            values.put("quantity","0");
+            db.insert("menu", "_id", values);
+
+            values.put("_id", "182");
+            values.put("nama", "Choco and Cookies Jumbo");
+            values.put("jenis", "Minuman");
+            values.put("harga", 7000);
+            values.put("img", R.drawable.iconyeski);
+            values.put("quantity","0");
+            db.insert("menu", "_id", values);
+
+            values.put("_id", "183");
+            values.put("nama", "Taro Milk Biasa");
+            values.put("jenis", "Minuman");
+            values.put("harga", 5000);
+            values.put("img", R.drawable.iconyeski);
+            values.put("quantity","0");
+            db.insert("menu", "_id", values);
+
+            values.put("_id", "184");
+            values.put("nama", "Taro Milk Jumbo");
+            values.put("jenis", "Minuman");
+            values.put("harga", 7000);
+            values.put("img", R.drawable.iconyeski);
+            values.put("quantity","0");
+            db.insert("menu", "_id", values);
+
+            values.put("_id", "185");
+            values.put("nama", "Taro Oreo Biasa");
+            values.put("jenis", "Minuman");
+            values.put("harga", 6000);
+            values.put("img", R.drawable.iconyeski);
+            values.put("quantity","0");
+            db.insert("menu", "_id", values);
+
+            values.put("_id", "186");
+            values.put("nama", "Taro Oreo Jumbo");
+            values.put("jenis", "Minuman");
+            values.put("harga", 8000);
+            values.put("img", R.drawable.iconyeski);
+            values.put("quantity","0");
+            db.insert("menu", "_id", values);
+
+            values.put("_id", "187");
+            values.put("nama", "Es Alpukat Biasa");
+            values.put("jenis", "Minuman");
+            values.put("harga", 5000);
+            values.put("img", R.drawable.iconyeski);
+            values.put("quantity","0");
+            db.insert("menu", "_id", values);
+
+            values.put("_id", "188");
+            values.put("nama", "Es Buah Biasa");
+            values.put("jenis", "Minuman");
+            values.put("harga", 6000);
+            values.put("img", R.drawable.iconyeski);
+            values.put("quantity","0");
+            db.insert("menu", "_id", values);
+
+            values.put("_id", "189");
+            values.put("nama", "Susu Soda / Soda Gembira Biasa");
+            values.put("jenis", "Minuman");
+            values.put("harga", 8000);
+            values.put("img", R.drawable.iconyeski);
+            values.put("quantity","0");
+            db.insert("menu", "_id", values);
+
+            values.put("_id", "190");
+            values.put("nama", "Yeski Papper Only");
+            values.put("jenis", "Makanan");
+            values.put("harga", 15000);
+            values.put("img", R.drawable.iconyeski);
+            values.put("quantity","0");
+            db.insert("menu", "_id", values);
+
+            values.put("_id", "191");
+            values.put("nama", "Nasi Ayam Goreng/Ayam Bakar + Es Teh");
+            values.put("jenis", "Makanan");
+            values.put("harga", 10000);
+            values.put("img", R.drawable.iconyeski);
+            values.put("quantity","0");
+            db.insert("menu", "_id", values);
+
+            values.put("_id", "192");
+            values.put("nama", "Nasi Ayam Geprek");
+            values.put("jenis", "Makanan");
+            values.put("harga", 8000);
+            values.put("img", R.drawable.iconyeski);
+            values.put("quantity","0");
+            db.insert("menu", "_id", values);
+
+            values.put("_id", "193");
+            values.put("nama", "Nasi Goreng SUMO + Es Teh 1 Pitcher");
+            values.put("jenis", "Makanan");
+            values.put("harga", 25000);
+            values.put("img", R.drawable.iconyeski);
+            values.put("quantity","0");
+            db.insert("menu", "_id", values);
         }

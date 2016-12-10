@@ -1572,3 +1572,124 @@ public class DB_Menu extends SQLiteOpenHelper {
             values.put("quantity","0");
             db.insert("menu", "_id", values);
         }
+        public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
+        db.execSQL("DROP TABLE IF EXISTS menu");
+        this.onCreate(db);
+    }
+
+    public ArrayList<HashMap<String, String>> tampilMenu () {
+        ArrayList<HashMap<String, String>> arrayListMenu = new ArrayList<HashMap<String, String>>();
+        SQLiteDatabase database = this.getWritableDatabase();
+        Cursor cursor = database.rawQuery("SELECT _id, nama, harga, quantity FROM menu ORDER BY nama ASC", null);
+        if (cursor.moveToFirst()) {
+            do {
+                HashMap<String, String> hashMapMenu = new HashMap<String, String>();
+                hashMapMenu.put("_id", cursor.getString(0));
+                hashMapMenu.put("nama", cursor.getString(1));
+                hashMapMenu.put("harga", cursor.getString(2));
+                hashMapMenu.put("quantity", cursor.getString(3));
+                arrayListMenu.add(hashMapMenu);
+            } while (cursor.moveToNext());
+        }
+        return arrayListMenu;
+    }
+
+    public ArrayList<HashMap<String, String>> tampilJumlahAtas0 () {
+        ArrayList<HashMap<String, String>> arrayListJumlah = new ArrayList<HashMap<String, String>>();
+        SQLiteDatabase database = this.getWritableDatabase();
+        Cursor cursor = database.rawQuery("SELECT nama, quantity FROM menu WHERE quantity!=0", null);
+        if (cursor.moveToFirst()) {
+            do {
+                HashMap<String, String> hashMapJumlah = new HashMap<String, String>();
+                hashMapJumlah.put("nama", cursor.getString(0));
+                hashMapJumlah.put("quantity", cursor.getString(1));
+                arrayListJumlah.add(hashMapJumlah);
+            } while (cursor.moveToNext());
+        }
+        return arrayListJumlah;
+    }
+
+    public int updateJumlah(int id, String jumlah, double harga) {
+        SQLiteDatabase database = this.getWritableDatabase();
+        ContentValues recordJumlah = new ContentValues();
+        recordJumlah.put("quantity", jumlah);
+        recordJumlah.put("harga", harga);
+        return database.update("menu", recordJumlah, "_id=" + id, null);
+    }
+
+    public void nolkanJumlah(int id) {
+        SQLiteDatabase database = this.getWritableDatabase();
+        database.execSQL("UPDATE menu SET quantity = 0 WHERE _id =" + id);
+        database.close();
+    }
+
+    public void nolkanSemua() {
+        SQLiteDatabase database = this.getWritableDatabase();
+        database.execSQL("UPDATE menu SET quantity=0");
+        database.close();
+    }
+
+    public HashMap<String, String> tampilMenuID(int id) {
+        SQLiteDatabase database = this.getReadableDatabase();
+        HashMap<String, String> hashMapMenu = new HashMap<String, String>();
+        Cursor cursor = database.rawQuery("SELECT * FROM menu WHERE _id=" + id + "", null);
+        if (cursor.moveToFirst()) {
+            do {
+                hashMapMenu.put("_id", cursor.getString(0));
+                hashMapMenu.put("nama", cursor.getString(1));
+                hashMapMenu.put("harga", cursor.getString(3));
+                hashMapMenu.put("quantity", cursor.getString(5));
+            } while (cursor.moveToNext());
+        }
+        return hashMapMenu;
+    }
+
+    public double hargaBarang() {
+        SQLiteDatabase database = this.getReadableDatabase();
+        HashMap<String, Double> hashMapMenu = new HashMap<String, Double>();
+        double harga = 0;
+        Cursor cursor = database.rawQuery("SELECT harga FROM menu WHERE quantity!=0", null);
+        if (cursor.moveToFirst()) {
+            do {
+                hashMapMenu.put("harga", cursor.getDouble(0));
+                for (double h : hashMapMenu.values()) {
+                    harga += h;
+                }
+            } while (cursor.moveToNext());
+        }
+        return harga;
+    }
+
+    public double hargaOngkir() {
+        double ongkir;
+        if (this.hargaBarang() < 50000) {
+            ongkir = 5000;
+        } else {
+            ongkir = 0;
+        }
+        return ongkir;
+    }
+
+    public double jumlahHarga() {
+        double total;
+        if (this.hargaBarang() < 50000) {
+            total = this.hargaBarang() + this.hargaOngkir();
+        } else {
+            total = this.hargaBarang();
+        }
+        return total;
+    }
+
+    public void kembalikanHarga(int id) {
+        HashMap<String, String> hashMapData = this.tampilMenuID(id);
+        double hargaMenu = Double.parseDouble(hashMapData.get("harga"));
+        double jumlahMenu = Double.parseDouble(hashMapData.get("quantity"));
+        double x;
+        if (jumlahMenu > 0) {
+            x = hargaMenu / jumlahMenu;
+        } else {
+            x = hargaMenu / (jumlahMenu + 1);
+        }
+        this.updateJumlah(id, "0", x);
+    }
+}
